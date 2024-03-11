@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Portafolio De Arturo</title>
 </head>
-<body>
+<body class="light">
     <!--Me faltaron algunas cositas Profesor,
         Espero que sea de su agrado este portafolio,
         Disculpe. -->
@@ -19,6 +19,9 @@
                 <i class='bx bxs-star-half'></i>
             </a>
             <div id="navMenu" class="menu">
+                <button class="btn-close" type="button" aria-label="close menu">
+                    <i class='bx bx-x'></i>
+                </button>
                 <ul class="menu-list">
 
                     <li class="menu-item">
@@ -34,11 +37,11 @@
                     </li>
 
                     <li class="menu-item">
-                        <a href="#proye" class="menu-link">Proyectos</a>
+                        <a href="#proyectos" class="menu-link">Proyectos</a>
                     </li>
 
                     <li class="menu-item">
-                        <a href="#contacto-off" class="menu-link">Contacto</a>
+                        <a href="#contacto" class="menu-link">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -55,41 +58,49 @@
     </header>
     <!-- MAIN -->
     <main class="main">
-    <h1 class="h1">My Name Is Arturo</h1>
     <!-- HERO -->
         <section id="hero" class="hero">
-            <div class="container-perfil">
-                <div class="img-fotoperfil">
-                    <img src="https://i0.wp.com/thehappening.com/wp-content/uploads/2022/05/pugs-3.jpg?w=1000&ssl=1" 
-                    alt="perfil" class="perfil">
+            <div class="container_hero">
+                <div class="intro">
+                    <p class="i_p">Hola 🖐, mi nombre es </p>
+                    <span>Arturo Araujo</span>
+                    <p class="i_p">Soy desarrollador <span>Web.</span></p>
                 </div>
-                <div class="icons">
-                    <a target="_blank" href="https://www.facebook.com/Zacarias.AA/" class="icons-perfil">
-                        <i class='bx bxl-facebook-square'></i>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/zacariazskt21/" class="icons-perfil">
-                        <i class='bx bxl-instagram-alt' ></i>
-                    </a>
-                    <a target="_blank" href="https://github.com/ArturoZAC?tab=repositories" class="icons-perfil">
-                        <i class='bx bxl-github' ></i>                    
-                    </a>
-                </div>
-            </div>  
+                <div class="container-perfil">
+                    <div class="img-fotoperfil">
+                        <img src="https://i0.wp.com/thehappening.com/wp-content/uploads/2022/05/pugs-3.jpg?w=1000&ssl=1" 
+                        alt="perfil" class="perfil">
+                    </div>
+                    <div class="icons">
+                        <a target="_blank" href="https://www.facebook.com/Zacarias.AA/" class="icons-perfil">
+                            <i class='bx bxl-facebook-square'></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/zacariazskt21/" class="icons-perfil">
+                            <i class='bx bxl-instagram-alt' ></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/ArturoZAC?tab=repositories" class="icons-perfil">
+                            <i class='bx bxl-github' ></i>                    
+                        </a> 
+                    </div>
+                </div>  
+            </div>
         </section>  
     <!-- BIENVENIDA -->
         <section id="bienvenida" class="bienvenida">
             <div class="texto-bienvenida">
                 <h2 class="presenh2">[Presentacion]</h2>
-                <div class="fondogris">
-                    <p class="texto-perfil">
-                        ¡Hola, soy Arturo Araujo! 👋,
-                        Estoy entusiasmado por explorar 
-                        el emocionante mundo del desarrollo 
-                        web y convertirme en un programador 
-                        full stack. Mi pasión por la 
-                        tecnología y la creación me impulsa 
-                        a aprender y mejorar constantemente 🚀.
-                    </p>
+                <div class="wid-mx">
+                    <div class="fondogris">
+                        <p class="texto-perfil">
+                            ¡Hola, soy Arturo Araujo! 👋,
+                            Estoy entusiasmado por explorar 
+                            el emocionante mundo del desarrollo 
+                            web y convertirme en un programador 
+                            full stack. Mi pasión por la 
+                            tecnología y la creación me impulsa 
+                            a aprender y mejorar constantemente 🚀.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -105,14 +116,10 @@
                 </div>
             </div>
 
-            <div class="icons-languagues">
-                <i class='bx bxl-html5'></i>
-                <i class='bx bxl-css3' ></i>
-                <i class='bx bxl-javascript' ></i>
-                <i class='bx bxl-java' ></i>
-                <i class='bx bxl-c-plus-plus' ></i>
-                <i class='bx bxl-php' ></i>
-                <i class='bx bx-data' ></i>
+            <div class="icons-container">
+                <div class="skills-tech">
+
+                </div>
             </div>    
 
         </section>
@@ -139,50 +146,179 @@
           </div>  
         </section>
     <!-- PROYECTOS -->
-        <section id="proyectos">
-            <div id="portafolio">
-                <h2 id="proye" class="titulo-seccion">[MIS PROYECTOS]</h2>
-                <div class="fila">
-                    <div class="proyecto">
-                        <div class="overlay"></div>
-                            <img src="img/img1test.JPG" alt="imagen1">
-                        <div class="info">
-                            <h4>Blog De Mascotas</h4>
-                            <p>HTML & CSS & JS</p>
+        <section id="proyectos" class="proycc">
+            <div class="proycc-container">
+                <h2 class="proycc-title">{Mis Proyectos}</h2>
+                <div class="proyoff-container">
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/offimg1.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/BlogPerruno/" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://test-blog-perruno.netlify.app/" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Blog Perruno</h3>
+                        <p class="proyect-description">Un sitio web agradable para perros, se usa sections y articles, position, display y documentacion.</p>
+                        <div class="proyect-skills">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>RESPONSIVE</span>
                         </div>
                     </div>
-                    <div class="proyecto">
-                        <div class="overlay"></div>
-                            <img src="img/img2test.JPG" alt="imagen1">
-                        <div class="info">
-                            <h4>Scan de QR</h4>
-                            <p>HTML & CSS</p>
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/offimggalleta.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/entregable-1/" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://araujoarturo-entregable1.netlify.app/" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Galleta de la Fortuna</h3>
+                        <p class="proyect-description">Se crea una pagina dinamica con react sobre la galleta de fortuna, se usa components, props, useState.</p>
+                        <div class="proyect-skills">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JSCRIPT</span>
+                            <span>REACT</span>
+                            <span>RESPONSIVE</span>
+                        </div>
+                    </div>                    
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/offimgweather.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/entregable02" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://entregable02-arturoaraujo.netlify.app/" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">App del Clima</h3>
+                        <p class="proyect-description">Trae informacion del clima en el lugar donde estas, se usa useState, useEffect, peticiones asincronas, axios, navigator.</p>
+                        <div class="proyect-skills">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JSCRIPT</span>
+                            <span>REACT</span>
+                            <span>RESPONSIVE</span>
                         </div>
                     </div>
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/offimgrick.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/entregable03" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://entregable-03-arturo-araujo.netlify.app/" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Rick & Morty Web</h3>
+                        <p class="proyect-description">Pagina Web que brinda informacion de los personajes de la serie, se usa List, manejo de errores, axios, paginacion.</p>
+                        <div class="proyect-skills">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JSCRIPT</span>
+                            <span>REACT</span>
+                            <span>RESPONSIVE</span>
+                        </div>
+                    </div>
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/offusersa.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/entregable04" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://entregable04-arturo-araujo.netlify.app/" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Users CRUD</h3>
+                        <p class="proyect-description">Pagina dinamica para usuarios, se usa metodos post, get, delete, update, uso axios, react-dom, react-hook-form.</p>
+                        <div class="proyect-skills">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JSCRIPT</span>
+                            <span>REACT</span>
+                            <span>RESPONSIVE</span>
+                        </div>
+                    </div>   
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/pokedexoff.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/entregable05" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://entregable05-arturo-araujo.netlify.app/" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Pokedex Web</h3>
+                        <p class="proyect-description">Pagina de pokemones, dinamica y divertita, se usa react router, redux, routes, axios, redux thunk.</p>
+                        <div class="proyect-skills">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JSCRIPT</span>
+                            <span>REACT</span>
+                            <span>RESPONSIVE</span>
+                        </div>
+                    </div>                     
                 </div>
             </div>
         </section>
 
     <!-- CONTACTO -->
-        <section">
+        <section id="contacto">
             <div id="contacto">
                 <div class="contenedor-form">
                     <h2 id="contacto-off" class="titulo-seccion">[Contactanos Ahora]</h2>                    
-                    <form action="">
+                    <form action="https://formsubmit.co/arturoyz2105@gmail.com" method="POST">
                         <div class="fila mitad">
-                            <input type="text" placeholder="Nombre" class="input-mitad">
-                            <input type="text" placeholder="Direcion"
+                            <input type="text" name="name" id="name" placeholder="Nombre" class="input-mitad">
+                            <input type="email" name="email" id="email" placeholder="Direcion"
                             class="input-mitad">
                         </div>
 
                         <div class="fila">
-                            <input type="text" placeholder="Tema" class="input-full">
+                            <input type="text" name="theme" id="theme" placeholder="Tema" class="input-full">
                         </div>
                         <div class="fila">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="input-full"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" class="input-full"></textarea>
+                        </div>
+                        <div class="mayor_box">
+                            <div class="box">
+                                <i class='bx bx-envelope' ></i>
+                                <span>arturoyz2105@gmail.com</span>
+                            </div>
+                            <div class="box">
+                                <i class='bx bx-phone' ></i>
+                                <span>+51 984 221 508 (Llamadas)</span>
+                            </div>
                         </div>
 
-                        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+                        <input type="submit" value="Enviar" class="btn-enviar">
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:3000/">
+                        <input type="hidden" name="_captcha" value="false">
+
                     </form>
                 </div>
             </div>
@@ -190,37 +326,22 @@
 
     <!-- FOOTER -->
         <footer class="footer">
-            <div>
-                <p class="footer-parrafo">Portafolio Arturo Academlo &copy; 2023</p>
-            </div>
-            <div class="icons-f">
-                <a href="/" class="icons-perfil-f">
-                    <i class='bx bxl-facebook-square'></i>
-                </a>
-                <a href="/" class="icons-perfil-f">
-                    <i class='bx bxl-instagram-alt' ></i>
-                </a>
-                <a href="/" class="icons-perfil-f">
-                    <i class='bx bxl-github' ></i>                    
-                </a>
-            </div>
+                <div>
+                    <p class="footer-parrafo">Portafolio Arturo Academlo &copy; 2023</p>
+                </div>
+                <div class="icons-f">
+                    <a href="/" class="icons-perfil-f">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                    <a href="/" class="icons-perfil-f">
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </a>
+                    <a href="/" class="icons-perfil-f">
+                        <i class='bx bxl-github' ></i>                    
+                    </a>
+                </div>
         </footer>
     </main>
-
-    <script>
-    const btnOpen = document.getElementById('btnOpen');
-    const navMenu = document.getElementById('navMenu');
-
-    btnOpen.onclick = function() {
-        navMenu.classList.toggle('show-menu');
-    }
-    document.addEventListener('click', function(event) {
-        if (!btnOpen.contains(event.target) && navMenu.classList.contains('show-menu')) {
-            navMenu.classList.remove('show-menu'); 
-        }
-    });
-    
-    </script>
-
+    <script src="index.js"></script>
 </body>
 </html>
