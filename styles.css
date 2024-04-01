@@ -468,6 +468,28 @@ h1{
     font-weight: 600;
 }
 
+span.html {
+    background: linear-gradient(to right, #F16524, #E54C21);
+}
+
+span.css{
+    background: linear-gradient(to right, #2965F1, #264DE4);
+}
+
+span.respo{
+    background: linear-gradient(to right, #757e3d, #4a5817);
+}
+
+span.javascript{
+    background: linear-gradient(to right, #FFDA3E, #D6BA32);
+}
+
+span.react{
+    background: linear-gradient(to right, #0C9FCB, #61DAFC);
+}
+
+
+
 .proyect-skills span:hover{
     background-color: #482780;
     color: white;
