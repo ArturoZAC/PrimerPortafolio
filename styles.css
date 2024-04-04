@@ -404,8 +404,10 @@ h1{
 .proycc-title{
     text-align: center;
     background: linear-gradient(to right, rgb(141 133 233), rgb(72, 10, 84));
-    background-clip: text;
+    font-weight: 700;
     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .proyect-img{
@@ -553,8 +555,10 @@ span.react{
     margin-bottom: 20px;
     text-align: center;
     background: linear-gradient(to right, rgb(141 133 233), rgb(72, 10, 84));
-    background-clip: text;
+    font-weight: 700;
     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 #contacto .contenedor-form{
