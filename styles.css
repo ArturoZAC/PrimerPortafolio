@@ -862,6 +862,24 @@ section#bienvenida {
     }
 
     .icons_perfil i{
-        font-size: 35px;
+        font-size: 40px;
     }
+}
+
+@media screen and (max-width: 412px) {
+    .img-fotoperfil{
+        width: 200px;
+        height: 200px;
+    }
+
+    .icons-perfil i{
+        font-size: 40px;
+    }
+
+    .container_hero{
+        flex-direction: column;
+        margin: auto auto auto auto;
+        height: calc(100vh - 67px);
+    }
+
 }
