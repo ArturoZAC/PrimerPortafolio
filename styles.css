@@ -835,7 +835,7 @@ section#bienvenida {
         justify-content: center;
         gap: 30px;
         flex-direction: column;
-        margin: 25px auto auto auto;
+        margin: auto auto auto auto;
         height: calc(100vh - 65px);
     }
 }
@@ -868,8 +868,39 @@ section#bienvenida {
 
     .container_hero{
         flex-direction: column;
-        margin: 25px auto auto auto;
-        height: calc(100vh - 67px);
+        margin: auto auto auto auto;
+        height: calc(100vh - 65px);
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    .container-perfil{
+        width: 100%;
+    }
+
+    .img-fotoperfil{
+        width: 200px;
+        height: 200px;
+    }
+
+    .icons-perfil i{
+        font-size: 40px;
+    }
+
+    .icons{
+        margin-top: 20px;
+    }
+
+    .i_p{
+        font-size: 26px;
+    }
+
+    .intro span{
+        font-size: 30px;
+    }
+
+    .intro {
+        padding: 0px 15px 0px 15px;
+    }
 }
