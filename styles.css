@@ -825,15 +825,22 @@ section#bienvenida {
     margin-bottom: 120px;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 799px){
+
+    .intro{
+        width: 100%;
+    }
+
     .container_hero{
+        justify-content: center;
+        gap: 30px;
         flex-direction: column;
         margin: 25px auto auto auto;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 65px);
     }
 }
 
-@media screen and (max-width: 630px){
+@media screen and (max-width: 610px){
     
     .btn-enviar{
         margin: 20px auto 0 auto !important;
@@ -850,35 +857,18 @@ section#bienvenida {
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media screen and (max-width: 572px){
-    .intro p{
-        font-size: 25px;
-    }
-
-    .intro span{
-        font-size: 28px;        
-    }
-
-    .icons_perfil i{
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .img-fotoperfil{
-        width: 200px;
-        height: 200px;
-    }
-
-    .icons-perfil i{
-        font-size: 40px;
-    }
 
     .container_hero{
         flex-direction: column;
-        margin: auto auto auto auto;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    .container_hero{
+        flex-direction: column;
+        margin: 25px auto auto auto;
         height: calc(100vh - 67px);
     }
 
