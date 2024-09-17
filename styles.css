@@ -12,7 +12,7 @@ html{
     box-sizing: border-box;
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "DM Mono",'Courier New', Courier, monospace;
 }
 
 body{
@@ -104,7 +104,7 @@ a{
 }
 
 .menu-link:hover {
-    color: #7d1c90;
+    color: black;
 }
 
 .show-menu{
@@ -165,7 +165,7 @@ h1{
 
 .intro span {
     font-size: 34px;
-    background: linear-gradient(to right, rgb(141 133 233), rgb(72, 10, 84));
+    background: linear-gradient(to right, rgb(141 133 233), rgb(148, 30, 172));
     font-weight: 700;
     color: transparent;
     -webkit-background-clip: text;
@@ -284,8 +284,8 @@ h1{
 
 .skill img{
     max-width: 50px; /* Establece el ancho máximo para asegurar que no se expandan más allá de 100px */
+    height: 50px;
     width: 100%;
-    max-height: 50px;
 }
 
 .skill h3{
@@ -327,9 +327,15 @@ h1{
 
 /* EDUCACION */
 .list-educacion{
-    list-style: circle;
+    list-style: none;
     font-size: 1.25rem; 
     color: #fff;
+    padding-left: 0px;
+    margin: 0px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .info-educacion{
@@ -470,6 +476,7 @@ h1{
     border-radius: 5px;
     font-size: 14px;
     font-weight: 600;
+    color: rgb(255, 255, 255);
 }
 
 span.html {
@@ -485,19 +492,27 @@ span.respo{
 }
 
 span.javascript{
-    background: linear-gradient(to right, #FFDA3E, #D6BA32);
+    background: linear-gradient(to right, #a8933f, #D6BA32);
 }
 
 span.react{
     background: linear-gradient(to right, #0C9FCB, #61DAFC);
 }
 
-
-
-.proyect-skills span:hover{
-    background-color: #482780;
-    color: white;
+span.typescript{
+    background: darkblue;
 }
+
+span.bootstrap{
+    background: linear-gradient(to right, #7b1c98, #3d0741);
+
+}
+
+span.tailwindcss{
+    background: linear-gradient(to right, #0f4556, #02637d);
+}
+
+
 
 .overlay {
     position: absolute;
@@ -695,7 +710,7 @@ gap: 40px;
 
 .fondogris:hover {
     background-color: #482780;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 h2{
@@ -838,6 +853,25 @@ section#bienvenida {
         margin: auto auto auto auto;
         height: calc(100vh - 65px);
     }
+
+    .container-list {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .wid-mx{
+        width: 100%;
+    }
+
+    .text-info{
+        max-width: 100%;
+    }
+
+    .educacion-div{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 610px){
@@ -903,4 +937,23 @@ section#bienvenida {
     .intro {
         padding: 0px 15px 0px 15px;
     }
+}
+
+.container-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.book-list {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    font-size: 50px;
+}
+
+p.info-p {
+    color: rgb(164 106 210);
 }

@@ -6,11 +6,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <title>Portafolio De Arturo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body class="light">
-    <!--Me faltaron algunas cositas Profesor,
-        Espero que sea de su agrado este portafolio,
-        Disculpe. -->
 
     <!-- HEADER -->
     <header class="header">
@@ -68,7 +68,7 @@
                 </div>
                 <div class="container-perfil">
                     <div class="img-fotoperfil">
-                        <img src="./img/img-perfiloff.jpeg" 
+                        <img src="./img/portfolio.jpeg" 
                         alt="perfil" class="perfil">
                     </div>
                     <div class="icons">
@@ -131,16 +131,18 @@
                 <h2 class="eduh2">[Educacion]</h2>
                 <div class="fondogris">
                     <p class="info-p">Estudiante de Ingenieria de Software.</p>
-                    <ul class="list-educacion">
-                        <li>Universidad Tecnologica del Peru 2021 - Actualidad.</li>
-                        <li>ICPNA 2023 - Actualidad.</li>
-                        <li>ACADEMLO 2023 - Actualidad.</li>
-                        <li>Java Fundamentals CIBERTEC 2023.</li>
-                    </ul>
+                    <div class="container-list">
+                        <ul class="list-educacion">
+                            <li>Universidad Tecnologica del Peru 2021 - Actualidad.</li>
+                            <li>Java Fundamentals Cibertec 2023.</li>
+                            <li>Academlo 2023 - 2024.</li>
+                            <li>Icpna 2023 - 2024.</li>
+                        </ul>
+                        <div class="book-list">
+                            <i class='bx bx-book-bookmark icon-education'></i>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="img-educacion">
-                  <i class='bx bx-book-bookmark icon-education'></i>
               </div>
             </div>
           </div>  
@@ -150,6 +152,85 @@
             <div class="proycc-container">
                 <h2 class="proycc-title">[Mis Proyectos]</h2>
                 <div class="proyoff-container">
+
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/proyectimg/mapasApp.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/MapasApp" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://mapas-app-azac.netlify.app" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Mapas App</h3>
+                        <p class="proyect-description">En esta pagina el usuario podra visualizar su ubicacion con mapBox, y buscar el lugar donde desea dirigirse.</p>
+                        <div class="proyect-skills">
+                            <span class="html">HTML</span>
+                            <span class="css">CSS</span>
+                            <span class="javascript">JAVASCRIPT</span>
+                            <span class="react">REACT</span>
+                            <span class="typescript">TYPESCRIPT</span>
+                            <span class="bootstrap">BOOTSTRAP</span>
+                        </div>
+                    </div>
+
+
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/proyectimg/Social.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/SocialMedia" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://social-dashboard-azac.netlify.app" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Social DashBoard</h3>
+                        <p class="proyect-description">Podemos ver la maquetacion de un panel de redes sociales, usando solo Tailwindcss.</p>
+                        <div class="proyect-skills">
+                            <span class="html">HTML</span>
+                            <span class="css">CSS</span>
+                            <span class="javascript">JAVASCRIPT</span>
+                            <span class="react">REACT</span>
+                            <span class="tailwindcss">TAILWINDCSS</span>
+                            <span class="respo">RESPONSIVE</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="proyect">
+                        <div class="proyect-img">
+                            <img src="img/proyectimg/countcoin.JPG" alt="Imagen1">
+                            <div class="overlay">
+                                <a class="btn_proy" href="https://github.com/ArturoZAC/counter-coin" target="_blank">
+                                    <i class='bx bx-code-alt' ></i>
+                                </a>
+                                <a class="btn_proy" href="https://count-app-azac.netlify.app" target="_blank">
+                                    <i class='bx bx-link' ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="proyect-name">Count Coin</h3>
+                        <p class="proyect-description">Simulamos una boleta de compra del usuario usando Typescript y useContext, dinamico y rapido.</p>
+                        <div class="proyect-skills">
+                            <span class="html">HTML</span>
+                            <span class="css">CSS</span>
+                            <span class="javascript">JAVASCRIPT</span>
+                            <span class="react">REACT</span>
+                            <span class="bootstrap">BOOTSTRAP</span>
+                            <span class="respo">RESPONSIVE</span>
+                        </div>
+                    </div>
+
+
+
+
                     <div class="proyect">
                         <div class="proyect-img">
                             <img src="img/offimg1.JPG" alt="Imagen1">
@@ -170,6 +251,32 @@
                             <span class="respo">RESPONSIVE</span>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div class="proyect">
                         <div class="proyect-img">
                             <img src="img/offimggalleta.JPG" alt="Imagen1">
@@ -327,7 +434,7 @@
     <!-- FOOTER -->
         <footer class="footer">
                 <div>
-                    <p class="footer-parrafo">Portafolio Arturo Academlo &copy; 2023</p>
+                    <p class="footer-parrafo">Portafolio Arturo &copy; 2023</p>
                 </div>
                 <div class="icons-f">
                     <a href="/" class="icons-perfil-f">

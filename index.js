@@ -2,8 +2,38 @@ const skillsTech = document.querySelector(".skills-tech")
 
 const skills = [
     {
-        path: "img/vsc.svg",
-        name: "Vs Code"
+        path: "img/typescript.svg",
+        name: "Typescript"
+    },
+
+    {
+        path: "img/tailwind.svg",
+        name: "Tailwindcss"
+    },
+
+    {
+        path: "img/postman.svg",
+        name: "Postman"
+    },
+
+    {
+        path: "img/redux.svg",
+        name: "Redux"
+    },
+
+    {
+        path: "img/proyectimg/icons8-oreja.svg",
+        name: "Bootstrap"
+    },
+
+    {
+        path: "img/proyectimg/material-ui-svgrepo-com.svg",
+        name: "Material UI"
+    },
+
+    {
+        path: "img/nodejs.svg",
+        name: "Node Js"
     },
 
     {
@@ -146,26 +176,36 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
 
             const targetId = this.getAttribute("href"); // Obtener el ID de la sección a la que debe desplazarse
+
             const targetSection = document.querySelector(targetId); // Obtener la sección correspondiente
 
             if (targetSection) {
-                targetSection.scrollIntoView({ behavior: "smooth" }); // Desplazarse suavemente a la sección
-
-                // Calcular la posición del título de la sección y ajustar el desplazamiento manualmente
-                const headerOffset = 100; // Ajusta este valor según sea necesario
-                const targetHeader = targetSection.querySelector("h2");
-                if (targetHeader) {
-                    const headerPosition = targetHeader.getBoundingClientRect().top;
+                if (targetId === "#educacion") {
+                    // Si el destino es #educacion, ajustamos el desplazamiento manualmente
                     window.scrollTo({
-                        top: window.scrollY - headerOffset + headerPosition,
+                        top: targetSection.offsetTop - 150, // Desplazar 100px más arriba
+                        behavior: "smooth"
+                    });
+                } else {
+                    // Para otras secciones, usamos scrollIntoView
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 70, // Desplazar 100px más arriba
                         behavior: "smooth"
                     });
                 }
+
+                if (targetId === "#contacto") {
+                    // Si el destino es #educacion, ajustamos el desplazamiento manualmente
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 20, // Desplazar 100px más arriba
+                        behavior: "smooth"
+                    });
+                } 
             }
         });
     });
-
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     // Agrega evento de clic al logotipo
