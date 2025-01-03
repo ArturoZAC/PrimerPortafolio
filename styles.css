@@ -451,6 +451,7 @@ h1{
 }
 
 .proyect-description{
+    text-align: center;
     height: 120px;
 }
 
@@ -497,6 +498,18 @@ span.javascript{
 
 span.react{
     background: linear-gradient(to right, #0C9FCB, #61DAFC);
+}
+
+span.express{
+    background: linear-gradient(to right, #85a3ac, #0a1012);
+}
+
+span.mongo{
+    background: linear-gradient(to right, #21b433, #46c07f);
+}
+
+span.node{
+    background: linear-gradient(to right, #274728, #31933b);
 }
 
 span.typescript{
